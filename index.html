@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Components Modal</title>
+    <link rel="stylesheet" href="zModal.css">
+</head>
+<body style="display: flex; justify-content: center; align-items: center">
+
+ <div id="app">
+   <button data-modal-id="my-modal">Через Атрибут вызов модального</button>
+
+
+   <div onclick="myModal.open()">asdasd</div>
+
+ </div>
+
+ <script src="zModal.js"></script>
+
+ <script>
+    const myModal = new Modal({
+        title: 'Привет я модальное окно!',
+        message: 'Здесь будет мое описаник',
+        // id: 'modal2',
+        closeButton: true,
+        closeButtonText: 'Закрыть модальное окно',
+        modalPosition: 'bottom'
+
+    });
+ </script>
+</body>
+</html>
